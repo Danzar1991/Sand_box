@@ -16,6 +16,7 @@ string = input() # исходная строка, которую нужно пр
 stek = [] # пустой стэк
 dictionary_bracket=  {')': '(', '}': '{', ']': '['} # словарь, в котором перечислены все возможные скобки
 count = 1 # номер скобки, который изначально равен 1
+
 for i in range(len(string)):
     if string[i] in ('(', '{', '['):
         stek.append((string[i], count))
